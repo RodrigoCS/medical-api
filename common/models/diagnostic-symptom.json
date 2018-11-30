@@ -1,0 +1,24 @@
+{
+  "name": "DiagnosticSymptom",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "diagnostic": {
+      "type": "belongsTo",
+      "model": "Diagnostic",
+      "foreignKey": ""
+    },
+    "symptom": {
+      "type": "belongsTo",
+      "model": "Symptom",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

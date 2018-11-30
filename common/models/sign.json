@@ -1,0 +1,29 @@
+{
+  "name": "Sign",
+  "plural": "signs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "diagnostics": {
+      "type": "hasMany",
+      "model": "Diagnostic",
+      "foreignKey": "",
+      "through": "DiagnosticSign"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

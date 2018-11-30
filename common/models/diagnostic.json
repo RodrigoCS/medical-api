@@ -1,0 +1,43 @@
+{
+  "name": "Diagnostic",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "disease": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "causes": {
+      "type": "string"
+    },
+    "treatment": {
+      "type": "string"
+    },
+    "studies": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "signs": {
+      "type": "hasMany",
+      "model": "Sign",
+      "foreignKey": "",
+      "through": "DiagnosticSign"
+    },
+    "symptoms": {
+      "type": "hasMany",
+      "model": "Symptom",
+      "foreignKey": "",
+      "through": "DiagnosticSymptom"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

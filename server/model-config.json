@@ -34,5 +34,25 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Sign": {
+    "dataSource": "learning",
+    "public": true
+  },
+  "Symptom": {
+    "dataSource": "learning",
+    "public": true
+  },
+  "Diagnostic": {
+    "dataSource": "knowledge",
+    "public": true
+  },
+  "DiagnosticSymptom": {
+    "dataSource": "learning",
+    "public": true
+  },
+  "DiagnosticSign": {
+    "dataSource": "learning",
+    "public": true
   }
 }
