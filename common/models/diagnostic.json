@@ -39,5 +39,35 @@
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "getMedicalDiagnostic": {
+      "accepts": [
+        {
+          "arg": "signs",
+          "type": "array",
+          "required": false,
+          "description": ""
+        },
+        {
+          "arg": "symptoms",
+          "type": "array",
+          "required": false,
+          "description": ""
+        }
+      ],
+      "returns": [
+        {
+          "arg": "data",
+          "root": true
+        }
+      ],
+      "description": "",
+      "http": [
+        {
+          "path": "/expert/diagnostic",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }

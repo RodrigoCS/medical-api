@@ -196,7 +196,6 @@ module.exports = function(server) {
         name: sign
       })
     }
-    console.log('found sign', found)
   })
 
   const symptoms = [
@@ -255,6 +254,5 @@ module.exports = function(server) {
         name: symptom
       })
     }
-    console.log('found symptom', found)
   })
 }
