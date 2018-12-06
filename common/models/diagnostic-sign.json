@@ -1,0 +1,24 @@
+{
+  "name": "DiagnosticSign",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "sign": {
+      "type": "belongsTo",
+      "model": "Sign",
+      "foreignKey": ""
+    },
+    "diagnostic": {
+      "type": "belongsTo",
+      "model": "Diagnostic",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
